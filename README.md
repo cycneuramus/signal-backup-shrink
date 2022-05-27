@@ -1,4 +1,4 @@
-# Overview
+## Overview
 
 This is a companion script to [signalbackup-tools](https://github.com/bepaald/signalbackup-tools) that reduces the size of a Signal backup by processing message attachments of the following file types:
 
@@ -7,13 +7,13 @@ This is a companion script to [signalbackup-tools](https://github.com/bepaald/si
 
 Using this method, I was able to reduce my Signal backup size by about ~80% (from 4GB to 800MB).
 
-# Dependencies
+## Dependencies
 
 + [signalbackup-tools](https://github.com/bepaald/signalbackup-tools)
 + [vcsi](https://github.com/amietn/vcsi)
 + [filetype](https://pypi.org/project/filetype)
 
-# Usage
+## Usage
 
 1. Dump the unencrypted backup components to disk:
 `signalbackups-tools [input] [password] --output [outputdirectory]`
