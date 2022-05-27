@@ -12,6 +12,7 @@ Using this method, I was able to reduce my Signal backup size by about ~80% (fro
 + [signalbackup-tools](https://github.com/bepaald/signalbackup-tools)
 + [vcsi](https://github.com/amietn/vcsi)
 + [filetype](https://pypi.org/project/filetype)
++ [pillow](https://pypi.org/project/Pillow)
 
 ## Usage
 
