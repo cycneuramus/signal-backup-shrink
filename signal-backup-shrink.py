@@ -9,7 +9,7 @@ import filetype
 from PIL import Image
 
 
-def tool_in_path(name):
+def tool_in_path(name: str) -> bool:
     return which(name) is not None
 
 
