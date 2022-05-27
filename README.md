@@ -18,7 +18,7 @@ Using this method, I was able to reduce my Signal backup size by about 80% (from
 
 1. Dump the unencrypted backup components to disk:
 
-`signalbackups-tools [input] [password] --output [directory]`
+`signalbackups-tools [backupfile] [password] --output [directory]`
 
 2. Process message attachments:
 
@@ -32,6 +32,6 @@ Using this method, I was able to reduce my Signal backup size by about 80% (from
 
 Currently, `signalbackup-tools` [only supports replacing attachments with images](https://github.com/bepaald/signalbackup-tools/issues/68#issuecomment-1138812152). Hence, it is not possible to 
 
-+ process audio files (such as voice recordnings)
++ process audio files (such as voice recordings)
 + replace gifs or videos with smaller versions
 + optimize PDFs or other documents
