@@ -28,6 +28,10 @@ Using this method, I was able to reduce my Signal backup size by about ~80% (fro
 
 `signalbackup-tools [directory] --replaceattachments -o OUTPUT.backup -op [password]`
 
-## TODO
+## Limitations
 
-+ Support audio files
+Currently, `signalbackup-tools` [only supports replacing attachments with images](https://github.com/bepaald/signalbackup-tools/issues/68#issuecomment-1138812152). Hence, it is not possible to 
+
++ process audio files (such as voice recordnings);
++ replace gifs or videos with smaller versions
++ optimize PDFs or other documents

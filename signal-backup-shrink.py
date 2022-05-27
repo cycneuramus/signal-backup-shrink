@@ -24,9 +24,9 @@ def newfile_path(file: str, ext: str = "new") -> str:
 
 
 def create_newfile_from_temp(file: str, tempfile: str) -> None:
-    dotnew_file = newfile_path(file)
+    newfile = newfile_path(file)
     if os.path.exists(tempfile):
-        os.replace(tempfile, dotnew_file)
+        os.replace(tempfile, newfile)
 
 
 def guess_filetype(file: str) -> str:
