@@ -27,3 +27,7 @@ Using this method, I was able to reduce my Signal backup size by about ~80% (fro
 3. Re-encrypt backup with processed attachments:
 
 `signalbackup-tools [directory] --replaceattachments -o OUTPUT.backup -op [password]`
+
+## TODO
+
++ Support audio files
