@@ -17,10 +17,13 @@ Using this method, I was able to reduce my Signal backup size by about ~80% (fro
 ## Usage
 
 1. Dump the unencrypted backup components to disk:
-`signalbackups-tools [input] [password] --output [outputdirectory]`
+
+`signalbackups-tools [input] [password] --output [directory]`
 
 2. Process message attachments:
-`signal-backup-shrink.py [outputdirectory]`
+
+`signal-backup-shrink.py [directory]`
 
 3. Re-encrypt backup with processed attachments:
-`signalbackup-tools [outputdirectory] --replaceattachments -o OUTPUT.backup -op [password]`
+
+`signalbackup-tools [directory] --replaceattachments -o OUTPUT.backup -op [password]`
