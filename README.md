@@ -5,7 +5,7 @@ This is a companion script to [signalbackup-tools](https://github.com/bepaald/si
 + `.jpg, .png` (resized and compressed)
 + `.gif, .mp4, .mkv, .3gp` (replaced with a collage of keyframes)
 
-Using this method, I was able to reduce my Signal backup size by about ~80% (from 4GB to 800MB).
+Using this method, I was able to reduce my Signal backup size by about 80% (from 4GB to 800MB) without having to delete anything and thus lose context in the message history.
 
 ## Dependencies
 
