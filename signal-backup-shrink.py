@@ -119,10 +119,10 @@ def main():
         if not filetype:
             continue
 
-        if any(t in filetype for t in ("jpg", "jpeg", "png")):
+        if any(ext in filetype for ext in ("jpg", "jpeg", "png")):
             img_shrink(file, filetype)
             print_size_change(file, filetype, filesize_kb)
-        elif any(t in filetype for t in ("mp4", "mkv", "3gp")):
+        elif any(ext in filetype for ext in ("mp4", "mkv", "3gp")):
             vid_to_collage(file)
             print_size_change(file, filetype, filesize_kb)
         elif filetype == "gif":
