@@ -103,12 +103,10 @@ def main():
     args = parser.parse_args()
 
     if not os.path.isdir(args.signal_backup_dir):
-        print("Backup directory not found")
-        exit()
+        exit("Backup directory not found")
 
     if not tool_in_path("vcsi"):
-        print("vcsi not found in PATH")
-        exit()
+        exit("vcsi not found in PATH")
 
     for file in glob.glob(f"{args.signal_backup_dir}/Attachment*.bin"):
         filesize_kb = int(os.path.getsize(file) / 1000)
