@@ -13,6 +13,10 @@ def tool_in_path(name: str) -> bool:
     return which(name) is not None
 
 
+def is_match(string: str, *patterns: str) -> bool:
+    return any(p in string for p in patterns)
+
+
 def strip_file_ext(file: str) -> str:
     return os.path.basename(file).split(".")[0]
 
@@ -117,13 +121,13 @@ def main():
         if not filetype:
             continue
 
-        if any(ext in filetype for ext in ("jpg", "jpeg", "png")):
+        if is_match(filetype, "jpg", "jpeg", "png"):
             img_shrink(file, filetype)
             print_size_change(file, filetype, filesize_kb)
-        elif any(ext in filetype for ext in ("mp4", "mkv", "3gp")):
+        elif is_match(filetype, "mp4", "mkv", "3gp"):
             vid_to_collage(file)
             print_size_change(file, filetype, filesize_kb)
-        elif filetype == "gif":
+        elif is_match(filetype, "gif"):
             gif_to_collage(file)
             print_size_change(file, filetype, filesize_kb)
 
